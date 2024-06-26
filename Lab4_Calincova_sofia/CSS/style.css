@@ -1,0 +1,157 @@
+.center-text {
+    text-align: center;
+  }
+
+.form-group {
+    margin-bottom: 10px;  
+}
+
+legend {
+    color: #0a4e15;
+}
+label {
+    display: inline-block;
+    width: 76px;
+} 
+
+.forma {
+    width: 665px;
+    height: 650px;
+    margin: 0 auto;
+    background-color: rgb(222, 219, 219);
+    color:rgb(123, 27, 27);
+    box-shadow: 5px 5px 5px rgba(137, 106, 106, 0.2);
+    border-radius: 10px;
+}
+.border{
+    border-radius: 10px;
+}
+
+.b1
+    {
+
+        width: 250px;
+        height: 500px;
+        background-color: beige;
+        border-radius: 10px;
+        margin: 20px 22px;
+    }
+
+.b2
+{
+
+    width: 250px;
+    height: 290px;
+    background-color: beige;
+    border-radius: 10px;;
+    margin-top: -540px;
+    margin-left: 327px;
+}
+.b3 {
+
+    width: 250px;
+    height: 180px;
+    background-color: beige;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 327px;
+}
+input[type=text]:focus{
+
+    width: 250px;
+    box-shadow: 5px 5px 5px rgba(18, 17, 17, 0.2);
+    background-color:rgb(222, 219, 219);
+}
+input[type=email]:focus{
+
+    width: 250px;
+    box-shadow: 5px 5px 5px rgba(18, 17, 17, 0.2);
+    background-color:rgb(222, 219, 219);
+}
+input[type=number]:focus{
+
+    width: 250px;
+    box-shadow: 5px 5px 5px rgba(18, 17, 17, 0.2);
+    background-color:rgb(222, 219, 219);
+}
+input[type="date"]:focus{
+
+    width: 250px;
+    box-shadow: 5px 5px 5px rgba(18, 17, 17, 0.2);
+    background-color:rgb(222, 219, 219);
+}
+
+input[type=reset], input[type=submit]{
+    padding: 10px;
+    border: 0px;
+    border-radius: 10px;
+    width: 100px;
+    cursor: pointer;
+    color: #4b432c;
+}
+input[type=reset]:hover, input[type=submit]:hover{
+    padding: 10px;
+    border: 0px;
+    border-radius: 10px;
+    width: 100px;
+    background-color: #e0a557c6;
+    box-shadow:  5px 5px 5px gray;
+    text-shadow: 5px 5px 5px gray;
+    cursor: pointer;
+}
+.form_buttons{
+text-align: center;
+}
+/* задание 3 */ 
+.abzat::before {
+    content:'Moldova...';
+    color:rgb(161, 96, 50); }
+
+ .abzat::after {
+ content:'Repuplica...';
+ color:rgb(85, 81, 76); }
+
+ .abzat::first-line{
+    color: rgb(17, 9, 9);
+    background-color: rgb(213, 186, 186);
+    font-weight: bold;
+ }
+
+ li:first-letter{
+    font-size: 20px;
+    background-color: rgb(103, 94, 94);
+    color: #fff;
+    margin-right: 0.2em;
+    border-radius: 0.1em;
+ }
+
+ li:first-child{
+    background-color: #a3a284;
+    width: 150px;
+}
+li:last-child{
+    background-color: #b8c6c3;
+    width: 150px;
+}
+h1::selection{
+    background-color: lightskyblue;
+    color: rgb(168, 50, 144);
+}
+
+/* 4 */   
+    a:link {
+    color: #0000d0; 
+   }
+   a:visited {
+    color: #ce77b1; 
+   }
+   
+   a:hover { 
+       color: #771414;
+   }
+    a:active {
+        color: #00ffff;
+   }
+
+
+

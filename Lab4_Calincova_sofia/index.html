@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="web page, html, css" />
+    <meta name="author" content="Calincova Sofia" />
+    <link rel="shortcut icon" href="images/ico.png">
+    <title>Laborator nr.4</title>
+
+    <style>   
+.all_blocks{
+    padding-top: 20px;
+    text-align: center; 
+}
+
+.block {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    margin: 15px;
+    box-shadow: 5px 5px 5px  #909090;
+
+}
+
+.block1 {
+    background-color: red;
+}
+
+.block2 {
+    background-color: black ;
+    background-image: url(Images/love.jpg) ;
+    background-size: 20px 20px;
+    background-repeat:repeat;
+}
+
+.block3 {
+    background-color:blueviolet;
+    background-image: url(Images/love.jpg) ;
+    background-size: 20px 20px;
+    background-repeat:repeat-x ;
+}
+
+.block4 {
+    background-color: rgb(32, 220, 35);
+    background-image: url(Images/love.jpg) ;
+    background-size: 20px 20px;
+    background-repeat:repeat-y ;
+    
+}
+
+.block5 {
+    background-color: aqua;
+    background-image: url(Images/love.jpg) ;
+    background-size: 20px 20px;
+    background-repeat: no-repeat ;
+    background-position: center;
+}
+    </style>
+    
+     
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    </head>
+
+<body background="images/fon.jpg">
+ <div class="all_blocks">
+    <div class="block block1"></div>
+    <div class="block block2"></div>
+    <div class="block block3"></div>
+    <div class="block block4"></div>
+    <div class="block block5"></div>
+</div>
+
+     <br>
+     <br>
+<hr width="80%" color="grey">
+     <br>
+     <br>
+
+<div class="forma">
+    <fieldset class="border">
+    <form>
+        <div>
+            <fieldset class="b1">
+                <legend><b>Date personale</b></legend>
+                <div class="form-group">
+                    <label>*Numele:</label>
+                    <input type="text" required pattern="[^[a-zA-Z]+$]" name="name" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label>*Prenumele:</label>
+                    <input type="text" required pattern="[^[a-zA-Z]+$]" name="surname" id="surname" required>
+                </div>
+                <div class="form-group">
+                    <label>E-mail:</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="form-group">
+                    <label>*Data nasterii:</label>
+                    <input type="date" name="birthdate" id="birthdate" required>
+                </div>
+                <div class="form-group">
+                    <label>Sexul</label>
+                    <input type="radio" name="gender" id="female" value="female"><b>F</b>
+                    <input type="radio" name="gender" id="male"><b>M</b>
+                </div>
+                <div class="form-group">
+                    <label>Telefonul:</label>
+                    <input type="number"  name="phoneNumber" id="phoneNum">
+                </div>
+                <div class="form-group">
+                    <label>Raionul:</label>
+                    <select>
+                        <optgroup label="Raioanele din centru">
+                        <option value="Ialoveni">Ialoveni</option>
+                        <option value="Straseni">Straseni</option>
+                        <option value="Orhei">Orhei</option>
+                        </optgroup>
+                        <optgroup label="Raioanele din nord">
+                        <option value="Edinet" selected>Edinet</option>
+                        <option value="Briceni">Briceni</option>
+                        <option value="Ocnita">Ocnita</option>
+                        </optgroup>
+                        <optgroup label="Raioanele din sud">
+                        <option value="Basarabeasca">Basarabeasca</option>
+                        <option value="Cimislia">Cimislia</option>
+                        <option value="Leova">Leova</option>
+                        </optgroup>
+                        </select>
+                </div>
+                <div class="form-group">
+                    <label>Studii:</label><br>
+                    <input type="checkbox" name="Colegiu" value="Colegiu">Colegiu <br>
+                    <input type="checkbox" name="Licenta" value="Licenta">Licenta <br>
+                    <input type="checkbox" name="Masterat" value="Masterat">Masterat <br>
+                </div>
+                <div class="form-group">
+                    <label>Suplimentar:</label>
+                    <textarea rows="7" cols="25" placeholder="Scrie aici..." ></textarea>
+                </div>
+            </fieldset>
+        </div>
+        <div>
+            <fieldset class="b2">
+                <legend><b>Date despre produsul ales</b></legend>
+                <div class="form-group">
+                    <label>*Denumirea produs:</label>
+                    <input type="text" name="Denumirea" id="Denumirea" required>
+                </div>
+                <div class="form-group">
+                    <label>*Producatorul:</label>
+                    <input type="text" name="Producatorul" id="Producatorul"required> 
+                </div>
+                <div class="form-group">
+                    <label>*Cantitatea de produse:</label>
+                    <input type="text" name="Cantitatea" id="Cantitatea" required>
+                </div>
+                <div class="form-group">
+                    <label>*Culoarea:</label>
+                    <input type="color" name="favcolor" required>
+                </div>
+                <div class="form-group">
+                    <label>*Marimea:</label>
+                    <input type="text" name="Marimea" id="Marimea" required>
+                </div>
+            </fieldset>
+        </div>
+        <div>
+            <fieldset  class="b3">
+                <legend>Date bancare</legend>
+                <div class="form-group">
+                    <label>*Tipul cardului:</label>
+                    <input type="radio" name="card" id="visa"> <b>Viza</b>
+                    <input type="radio" name="card" id="mastercard"> <b>MasterCard</b>
+                </div>
+                <div class="form-group">
+                    <label >*Numarul cardului:</label>
+                    <input type="text" pattern="2[0-9]{3}-[0-9]{3}" name="cardNumber" id="cardNumber" required>
+                </div>
+                <div class="form-group">
+                    <label>*Expira:</label>
+                    <input type="date" name="date" id="date" required>
+                </div>
+            </fieldset>
+        </div>
+        <p class="center-text">*Campul trebuie sa fie completat!</p>
+        <div class="form_buttons">
+            <input type="reset" value="Anuleaza">
+            <input type="submit" value="Trimite">
+        </div>
+    </form>
+</fieldset>
+</div>
+      <br>
+     <br>
+
+<hr width="80%" color="grey">
+     <br>
+     <br>
+
+ <h3>Список группы</h3>
+ <ol>
+     <li>Богданов Юрий</li>
+     <li>Калинкова София</li>
+     <li>Куртиш Екатерина</li>
+     <li>Гачаев Дмитрий</li>
+     <li>Годорожа Оксана</li>
+     <li>Жантуан Анастасия</li>
+     <li>Мамалига Артур</li>
+     <li>Максименко Станислав</li>
+     <li>Митков Евгений</li>
+     <li>Явников Дмитрий</li>
+     <li>Питропов Александр</li>
+     <li>Славов Константин</li>
+     <li>Зайка Григорий</li>
+     <li>Михайлов Пётр</li>
+ </ol>
+ <hr width="80%" color="grey">
+ <h3>Список предметов</h3>
+ <ul >
+   <li>Математика</li>
+   <li>Операционные системы</li>
+   <li>Английский язык</li>
+   <li>Румынский язык</li>
+   <li>Алгоритмы и структуры данных</li>
+   <li>HTML</li>
+   </ul>
+ 
+   <hr width="80%" color="grey">
+    <h1 class="center-text">Республика Молдова</h1>
+   <p class="abzat">Респу́блика Молдо́ва — государство в Юго-Восточной Европе. Граничит с Украиной и Румынией. Территория Молдавии составляет 33 846 км², однако часть территории (непризнанная ПМР) не контролируется властями.</p> 
+   <p class="abzat">Численность населения, учтённая по итогам переписи 2014 года, составляла 2 913 281 человек по текущей оценке на 1 января 2016 года — 3 553 100 человек.</p>
+   <p class="abzat">Занимает 118-е место в мире по численности населения и 135-е по территории. Выхода к морю не имеет.</p>
+
+   <hr width="80%" color="grey">
+   <h1 class="center-text">Новостной портал Молдовы</h1>
+<p class="center-text">Intagram:
+<a href="https://www.instagram.com/moldovalibera/" target="_blank"> Moldova Liberă</a></p>
+</body>
+</html>

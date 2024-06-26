@@ -1,0 +1,150 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+li {
+    list-style: none;
+}
+
+.navbar {
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: bisque;
+}
+
+.logo {
+    font-size: 30px;
+}
+
+.menu {
+    display: flex;
+    font-size: 18px;
+}
+
+.menu li {
+    padding: 5px 15px;
+}
+
+.menu li a:hover {
+    transition: all .3;
+    color:rgb(1, 16, 11);
+}
+ 
+#checkbox_toggle {
+    display: none;
+}
+
+.hamburger {
+    display:none;
+    font-size: 24px; 
+    cursor: pointer;
+}
+
+.hamberger-line {
+    background-color: rgb(35, 66, 93);
+    display: block;
+    height:2px;
+    position: relative;
+    width: 24px;
+}
+
+.hamberger-line::before,
+.hamberger-line::after {
+    background-color: rgb(35, 66, 93);
+    content: '';
+    display: block;
+    position: absolute;
+    transition: all .3s;
+    width: 100%;
+    height: 100%;
+}
+.hamberger-line::before{
+    top:7px;
+}
+
+.hamberger-line::after{
+    top: -7px;
+}
+
+@media (max-width:768px)  {
+
+    .menu {
+       display: none;
+       position: absolute;
+       background-color: rgb(246, 238, 238);
+       text-align: center;
+       right: 0;
+       left: 0;
+       margin-top: 20px;
+    }
+
+    .menu li a {
+        color: grey;
+        display: block;
+        padding: 15px;
+    }
+
+    .menu li:hover{
+        background-color: rgb(166, 160, 160);
+    }
+
+    #checkbox_toggle:checked ~ .menu {
+        display: block;
+        max-height: 100%;
+
+    }
+
+    .hamburger {
+        display: block;
+        padding: 20px o;
+    }
+}
+
+.gallery img {
+    width: 100%;
+    max-width: 400px; /* Максимальная ширина изображения */
+    height: auto;
+    margin: 11px;
+  }
+  
+  /* Медиазапросы для адаптации галереи к разным размерам экранов */
+  @media screen and (min-width: 768px) {
+    .gallery img {
+      width: 48%; /* Для среднего экрана, 2 изображения в ряду */
+    }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    .gallery img {
+      width: 23%; /* Для большого экрана, 4 изображения в ряду */
+    }
+  }
+
+  a {
+    background-image: url(images/sprites2.png);
+    background-repeat: no-repeat;
+    height: 98px;
+    width: 100px;
+    display: inline-block;
+    margin-left: 20px;
+    transition: all 0.2s ease-out;
+  }
+
+a.facebook { background-position: left top; }
+a.twitter { background-position: -100px top; }
+a.youtube { background-position: -200px top; }
+a.instagram { background-position: -300px top; }
+a.linkedin { background-position: -400px top; }
+a.tumblr { background-position: -500px top; }
+a.google { background-position: -600px top; }
+a:hover { background-position-y: bottom;}

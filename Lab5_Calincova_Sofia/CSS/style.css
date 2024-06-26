@@ -1,0 +1,62 @@
+
+.nachalinoe {
+  background-color: #e0f0b3;
+  transition: background-color 2s ease;
+}
+.nachalinoe:hover {
+  background-color: #FF5733;
+
+}
+.container {
+  display: flex;
+  justify-content: center;
+  }
+
+.rotate-only {
+  width: 100px;
+  height: 100px;
+  margin: 50px;
+  background-color: #ffe733;
+  animation: rotate 3s infinite linear; 
+  display: inline-block; 
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animated-element {
+  width: 100px;
+  height: 100px;
+  margin: 50px;
+  background-color: #ffe733;
+  animation: rotate 5s infinite, colorChange 2s infinite;
+  display: inline-block;
+ } 
+
+ @keyframes colorChange {
+  0% {
+    background-color: #efa999;
+  }
+  50% {
+    background-color: #8b33ff;
+  }
+  100% {
+    background-color: #80ec38;
+  }
+}
+
+.floatleft{
+  float:left
+}
+.floatright{
+  float:right
+}
